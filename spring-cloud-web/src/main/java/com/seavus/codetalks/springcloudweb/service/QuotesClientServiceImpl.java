@@ -16,7 +16,7 @@ public class QuotesClientServiceImpl implements QuotesClientService {
 	
 	private RestTemplate restTemplate;
 	
-    @HystrixCommand(fallbackMethod = "fallbackQuoteResult")
+	@HystrixCommand(fallbackMethod = "fallbackQuoteResult")
 	public QuoteResult getQuoteResult() {
 		return restTemplate.getForObject("http://quotes-service/quotes", QuoteResult.class);
 	}
