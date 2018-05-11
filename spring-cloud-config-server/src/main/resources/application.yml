@@ -6,7 +6,8 @@ spring:
     config:
       server:
         git:
-          uri: https://git.seavus.com/opensource/spring-cloud-quotes-app-config.git
+          uri: https://github.com/drazen-nikolic/spring-cloud-example.git
+          search-paths: spring-cloud-quotes-app-config
       allow-override: true
 
    
