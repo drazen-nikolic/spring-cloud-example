@@ -1,0 +1,5 @@
+quote:
+  origin: Yoda
+
+server:
+  port: 28080

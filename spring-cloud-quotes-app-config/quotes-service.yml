@@ -1,0 +1,25 @@
+quote:
+  origin: Motivational
+
+spring:
+  jpa:
+    generate-ddl: true
+  cloud:
+    config:
+      allow-override: true
+      override-system-properties: false
+      
+server:
+  port: 18080
+  
+management:
+  security:
+    enabled: false
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost         
+

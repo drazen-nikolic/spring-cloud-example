@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Popular Quotes</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"/>
+    <style>
+		body{
+		   background-size: cover;
+		   font-family: 'Fjalla One', sans-serif;
+		}    
+		div.quote {
+			margin-left:45%;
+			margin-right: 5%;
+			margin-top: 8%
+		}
+		p.quote-text {
+			font-size: 40px;
+		}
+		p.port {
+			color: #555555;
+			font-style: italic;
+			font-size: 20px;
+		}
+    </style>
+</head>
+<body background="zen.jpg">
+	<div class="quote">
+	    <p class="quote-text" th:text="${quoteText}" />
+	    <p class="port" th:text="'port: ' + ${serverPort}" align="right"/>
+	</div>
+</body>
+</html>
